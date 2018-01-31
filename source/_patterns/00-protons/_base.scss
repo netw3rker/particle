@@ -21,8 +21,8 @@
 @import '~bootstrap/scss/code';
 
 // Font Awesome icons
-$fa-font-path: '~font-awesome/fonts/';
-@import '~font-awesome/scss/font-awesome';
+// $fa-font-path: '~font-awesome/fonts/';
+// @import '~font-awesome/scss/font-awesome';
 
 // Custom CSS-generating output
 @import 'printing/type';
@@ -30,3 +30,6 @@ $fa-font-path: '~font-awesome/fonts/';
 @import 'printing/tables';
 @import 'printing/transitions';
 @import 'printing/html-elements';
+
+// Phantom demo
+@import 'html5up-phantom/assets/css/main.css';
