@@ -140,6 +140,7 @@ module.exports = {
     new ExtractTextPlugin({
       filename: '[name].styles.css',
       allChunks: true,
+      // disable: true,
     }),
     // Yell at us while writing Sass
     new StyleLintPlugin(),

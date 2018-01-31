@@ -1,0 +1,218 @@
+/* Tiles */
+
+//.tiles {
+//  display: flex;
+//  flex-wrap: wrap;
+//  position: relative;
+//  margin: -2.5em 0 0 -2.5em;
+//}
+
+.phantom-card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+  width: calc(33.33333% - 2.5em);
+  margin: 2.5em 0 0 2.5em;
+}
+
+.phantom-card__image-wrapper {
+  transition: transform 0.5s ease;
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.phantom-card__image {
+  display: block;
+  width: 100%;
+}
+
+.phantom-card__image-wrapper:before {
+  pointer-events: none;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.phantom-card__image-wrapper:after {
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.25;
+  z-index: 2;
+}
+
+.phantom-card__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  border-radius: 4px;
+  border-bottom: 0;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.phantom-card__link > :last-child {
+  margin: 0;
+}
+
+.phantom-card__link:hover {
+  color: #ffffff !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.phantom-card__title {
+  margin: 0;
+}
+
+.phantom-card__content {
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  width: 100%;
+  max-height: 0;
+  line-height: 1.5;
+  margin-top: 0.35em;
+  opacity: 0;
+}
+
+.phantom-card__content > :last-child {
+  margin-bottom: 0;
+}
+
+.phantom-card--style1 > .phantom-card__image-wrapper:before {
+  background-color: #f2849e;
+}
+
+.phantom-card--style2 > .phantom-card__image-wrapper:before {
+  background-color: #7ecaf6;
+}
+
+.phantom-card--style3 > .phantom-card__image-wrapper:before {
+  background-color: #7bd0c1;
+}
+
+.phantom-card--style4 > .phantom-card__image-wrapper:before {
+  background-color: #c75b9b;
+}
+
+.phantom-card--style5 > .phantom-card__image-wrapper:before {
+  background-color: #ae85ca;
+}
+
+.phantom-card--style6 > .phantom-card__image-wrapper:before {
+  background-color: #8499e7;
+}
+
+body:not(.is-touch) .phantom-card:hover > .phantom-card__image-wrapper { /* stylelint-disable-line selector-max-specificity */
+  transform: scale(1.1);
+}
+
+body:not(.is-touch) .phantom-card:hover > .phantom-card__image-wrapper:before { /* stylelint-disable-line selector-max-specificity */
+  background-color: #333333;
+  opacity: 0.35;
+}
+
+body:not(.is-touch) .phantom-card:hover > .phantom-card__image-wrapper:after { /* stylelint-disable-line selector-max-specificity */
+  opacity: 0;
+}
+
+body:not(.is-touch) .phantom-card:hover .phantom-card__content { /* stylelint-disable-line selector-max-specificity */
+  max-height: 15em;
+  opacity: 1;
+}
+
+* + .tiles {
+  margin-top: 2em;
+}
+
+body.is-loading .phantom-card {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+body.is-touch .phantom-card .phantom-card__content {
+  max-height: 15em;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+
+  .tiles {
+    margin: -1.25em 0 0 -1.25em;
+  }
+
+  .phantom-card {
+    width: calc(33.33333% - 1.25em);
+    margin: 1.25em 0 0 1.25em;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+
+  .tiles {
+    margin: -2.5em 0 0 -2.5em;
+  }
+
+  .phantom-card {
+    width: calc(50% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+
+  .tiles {
+    margin: -1.25em 0 0 -1.25em;
+  }
+
+  .phantom-card {
+    width: calc(50% - 1.25em);
+    margin: 1.25em 0 0 1.25em;
+  }
+
+  .phantom-card:hover > .image {
+    transform: scale(1.0);
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .tiles {
+    margin: 0;
+  }
+
+  .phantom-card {
+    width: 100%;
+    margin: 1.25em 0 0 0;
+  }
+
+}

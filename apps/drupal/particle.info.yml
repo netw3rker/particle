@@ -43,7 +43,7 @@ component-libraries:
       - ../../source/_patterns/02-molecules/carousel
       - ../../source/_patterns/02-molecules/jumbotron
       - ../../source/_patterns/02-molecules/pagination
-      - ../../source/_patterns/02-molecules/card-phantom
+      - ../../source/_patterns/02-molecules/phantom-card
       - ../../source/_patterns/02-molecules/example-widget
   organisms:
     paths:
