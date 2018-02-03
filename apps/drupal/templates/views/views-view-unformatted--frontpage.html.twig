@@ -18,7 +18,7 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<div class="row">
+<div class="row tiles">
   {% for row in rows %}
     {%
       set row_classes = [
@@ -28,8 +28,9 @@
       'col-lg-4',
       ]
     %}
-    <div{{ row.attributes.addClass(row_classes) }}>
+    {# Removing the wrapper div solely for tiles demo #}
+    {#<div{{ row.attributes.addClass(row_classes) }}>#}
       {{ row.content }}
-    </div>
+    {#</div>#}
   {% endfor %}
 </div>
