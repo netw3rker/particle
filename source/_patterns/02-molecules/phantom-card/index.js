@@ -1,6 +1,6 @@
 import 'protons';
 
-import './_phantom-card.scss';
+// import './_phantom-card.scss';
 
 
 export const name = 'phantom-card';
