@@ -40,10 +40,6 @@ generated-namespaces:
     paths:
       - ../../source/_patterns/01-atoms
       - ../../source/_patterns/01-atoms/icon
-<<<<<<< HEAD
-=======
-      - ../../source/_patterns/01-atoms/grid
->>>>>>> epic/v10
       - ../../source/_patterns/01-atoms/badge
       - ../../source/_patterns/01-atoms/alert
       - ../../source/_patterns/01-atoms/image
