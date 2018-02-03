@@ -21,7 +21,7 @@ cacheBusterOn: 'true'
 exportDir: export
 publicDir: ../../../dist/pl/
 sourceDir: ../../../source/
-defaultPattern: all
+defaultPattern: protons-welcome
 defaultShowPatternInfo: false
 ishMinimum: '240'
 ishMaximum: '2600'
@@ -56,8 +56,11 @@ plugins:
       atoms:
         paths:
           - ../../../source/_patterns/01-atoms
-          - ../../../source/_patterns/01-atoms/grid
           - ../../../source/_patterns/01-atoms/icon
+<<<<<<< HEAD
+=======
+          - ../../../source/_patterns/01-atoms/grid
+>>>>>>> epic/v10
           - ../../../source/_patterns/01-atoms/badge
           - ../../../source/_patterns/01-atoms/alert
           - ../../../source/_patterns/01-atoms/image
