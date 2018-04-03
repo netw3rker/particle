@@ -1,6 +1,7 @@
 {
     "package": {
         "name": "phase2/particle",
+	"stability": "dev",
         "version": "1.0.0",
         "source": {
           "url": "github.com/phase2/particle",
