@@ -1,12 +1,16 @@
 {
-    "package": {
-        "name": "phase2/particle",
-	"stability": "dev",
-        "version": "1.0.0",
-        "source": {
-          "url": "github.com/phase2/particle",
-          "type": "git",
-          "reference": "master"
-        }
+  "packages": {
+    "phase2/particle": {
+      "dev-master": {
+         "name": "phase2/particle",
+         "source": {
+           "reference": "master",
+           "type": "git",
+           "url": "git@github.com:netw3rker/particle"
+         },
+         "type": "project",
+         "version": "dev-master"
+      },
     }
+  }
 }
