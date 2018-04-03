@@ -1,0 +1,11 @@
+{
+    "package": {
+        "name": "phase2/particle",
+        "version": "1.0.0",
+        "source": {
+          "url": "github.com/phase2/particle",
+          "type": "git",
+          "reference": "master"
+        }
+    }
+}
