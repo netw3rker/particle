@@ -1,0 +1,11 @@
+{
+    "name": "phase2/particle",
+    "description": "Theme template for particle/patternlab work",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "drupal/components": "^1.0"
+    },
+    "require-dev": {}
+}
